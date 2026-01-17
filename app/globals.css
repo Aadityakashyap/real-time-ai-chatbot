@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0b141a;
+  --color-bg-soft: #111b21;
+  --color-bg-elev: #1f2c34;
+  --color-surface: #202c33;
+  --color-text: #e9edef;
+  --color-text-soft: #c7d1d9;
+  --color-muted: #8696a0;
+  --color-accent-2: #005c4b;
+  --color-accent: #25d366;
+  --color-danger: #ef4444;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-inset:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06), inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --color-bg: #f0f2f5;
+  --color-bg-soft: #f6f7f9;
+  --color-bg-elev: #f0f3f6;
+  --color-surface: #ffffff;
+  --color-text: #0b141a;
+  --color-text-soft: #2b3a42;
+  --color-muted: #5b6b75;
+  --color-accent-2: #25d366;
+  color-scheme: light;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-bg text-text;
+}
+
+.neu {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius-lg);
+}
+.neu-inset {
+  background: var(--color-bg-elev);
+  box-shadow: var(--shadow-inset);
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3942;
+  border-radius: 8px;
+}
+.light ::-webkit-scrollbar-thumb {
+  background: #cfd8dc;
+}
+
+@keyframes bubbleIn {
+  from {
+    transform: translateY(6px) scale(0.98);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.bubble-enter {
+  animation: bubbleIn 220ms ease-out;
+}
+
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+.typing-dot {
+  animation: blink 1200ms infinite;
+}
+.typing-dot:nth-child(2) {
+  animation-delay: 200ms;
+}
+.typing-dot:nth-child(3) {
+  animation-delay: 400ms;
+}
