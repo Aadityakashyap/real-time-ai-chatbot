@@ -76,3 +76,7 @@ Visit your Vercel your domain and test AI Chatbot.
 
 - ~4–5 hours (design implementation, polish, README)
 - ~6–7 hours (WebSocket implementation, test)
+
+## Demo video
+
+> Demo video link here: [Demo Video](https://drive.google.com/file/d/1d3mrt0N8z3oFmCUNKupfszpekBuZ20qy/).
