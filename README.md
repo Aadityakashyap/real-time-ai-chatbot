@@ -80,3 +80,7 @@ Visit your Vercel your domain and test AI Chatbot.
 ## Demo video
 
 > Demo video link here: [Demo Video](https://drive.google.com/file/d/1d3mrt0N8z3oFmCUNKupfszpekBuZ20qy/).
+
+## Live Demo link
+
+> Live Demo link here: [Live Demo](https://real-time-ai-chatbot.vercel.app).

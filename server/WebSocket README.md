@@ -32,9 +32,9 @@ Make sure have a start script:
     "start": "node server/ws-server.ts"
   },
   "dependencies": {
-    "ws": "^8.18.0",
-    "@google/generative-ai": "^0.5.0",
-  }
+    "ws": "^8.19.0",
+    "@google/generative-ai": "^0.24.1"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/ws": "^8.18.1",
@@ -56,7 +56,9 @@ Make sure have a start script:
 3. Connect your GitHub repo.
 4. Fill in:
    - Environment: Node
+   - Build Command: `npm install`
    - Start Command: `npm start`
+   - Region: choose recommended
 5. Add environment variables under Settings → Environment:
    - `WS_HOST=0.0.0.0`
    - `WS_PORT=10000` (or use `$PORT` provided by Render)
